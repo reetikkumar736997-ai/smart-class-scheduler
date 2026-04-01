@@ -2,11 +2,6 @@
 
 Teacher-first timetable management platform with a clean student view, study material sharing, announcements, and chatbot support.
 
-## Live Demo
-
-- App: [https://smart-class-scheduler-eight-beta.vercel.app](https://smart-class-scheduler-eight-beta.vercel.app)
-- GitHub: [https://github.com/reetikkumar736997-ai/smart-class-scheduler](https://github.com/reetikkumar736997-ai/smart-class-scheduler)
-
 ## Project Description
 
 Smart Class Scheduler is a full-stack academic management app built for a simple two-role workflow:
