@@ -5,7 +5,6 @@ Teacher-first timetable management platform with a clean student view, study mat
 ## Live Demo
 
 - App: [https://smart-class-scheduler-eight-beta.vercel.app](https://smart-class-scheduler-eight-beta.vercel.app)
-- Deployment: [https://smart-class-scheduler-adhler7sa.vercel.app](https://smart-class-scheduler-adhler7sa.vercel.app)
 - GitHub: [https://github.com/reetikkumar736997-ai/smart-class-scheduler](https://github.com/reetikkumar736997-ai/smart-class-scheduler)
 
 ## Project Description
