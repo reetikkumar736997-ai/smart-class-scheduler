@@ -1,0 +1,33 @@
+<svg width="1280" height="720" viewBox="0 0 1280 720" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1280" height="720" rx="32" fill="#0F172A"/>
+  <rect x="36" y="36" width="1208" height="180" rx="28" fill="#172036"/>
+  <text x="72" y="96" fill="#FFFFFF" font-size="44" font-weight="700" font-family="Arial">Simple timetable manager</text>
+  <text x="72" y="138" fill="#AAB7D4" font-size="22" font-family="Arial">Teachers can add manual entries while students see the final weekly schedule.</text>
+  <rect x="874" y="72" width="120" height="104" rx="22" fill="#243451"/>
+  <rect x="1012" y="72" width="120" height="104" rx="22" fill="#243451"/>
+  <rect x="1150" y="72" width="58" height="104" rx="22" fill="#243451"/>
+  <rect x="36" y="244" width="1208" height="170" rx="28" fill="#172036"/>
+  <text x="72" y="296" fill="#FFFFFF" font-size="30" font-weight="700" font-family="Arial">Manual timetable entry</text>
+  <rect x="72" y="326" width="170" height="44" rx="14" fill="#EEF2FF"/>
+  <rect x="258" y="326" width="110" height="44" rx="14" fill="#EEF2FF"/>
+  <rect x="384" y="326" width="110" height="44" rx="14" fill="#EEF2FF"/>
+  <rect x="510" y="326" width="140" height="44" rx="14" fill="#EEF2FF"/>
+  <rect x="666" y="326" width="180" height="44" rx="14" fill="#EEF2FF"/>
+  <rect x="862" y="326" width="140" height="44" rx="14" fill="#EEF2FF"/>
+  <rect x="1018" y="326" width="96" height="44" rx="14" fill="#EEF2FF"/>
+  <rect x="1130" y="326" width="78" height="44" rx="14" fill="#EEF2FF"/>
+  <rect x="72" y="444" width="1208" height="240" rx="28" fill="#172036"/>
+  <rect x="72" y="444" width="1208" height="48" rx="28" fill="#202D47"/>
+  <rect x="72" y="494" width="140" height="190" fill="#1D2942"/>
+  <line x1="212" y1="492" x2="212" y2="684" stroke="#2C3A56"/>
+  <line x1="406" y1="492" x2="406" y2="684" stroke="#2C3A56"/>
+  <line x1="600" y1="492" x2="600" y2="684" stroke="#2C3A56"/>
+  <line x1="794" y1="492" x2="794" y2="684" stroke="#2C3A56"/>
+  <line x1="988" y1="492" x2="988" y2="684" stroke="#2C3A56"/>
+  <line x1="1182" y1="492" x2="1182" y2="684" stroke="#2C3A56"/>
+  <line x1="72" y1="558" x2="1280" y2="558" stroke="#2C3A56"/>
+  <line x1="72" y1="622" x2="1280" y2="622" stroke="#2C3A56"/>
+  <rect x="240" y="516" width="138" height="84" rx="20" fill="#EEF2FF"/>
+  <rect x="628" y="580" width="138" height="84" rx="20" fill="#EEF2FF"/>
+  <rect x="1016" y="516" width="138" height="84" rx="20" fill="#EEF2FF"/>
+</svg>

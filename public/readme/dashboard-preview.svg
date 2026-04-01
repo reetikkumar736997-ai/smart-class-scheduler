@@ -1,0 +1,40 @@
+<svg width="1280" height="720" viewBox="0 0 1280 720" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1280" height="720" rx="32" fill="#0F172A"/>
+  <rect x="28" y="28" width="260" height="664" rx="28" fill="#172036"/>
+  <rect x="52" y="52" width="212" height="162" rx="24" fill="url(#heroA)"/>
+  <text x="74" y="95" fill="#FFE5DA" font-size="18" font-family="Arial" letter-spacing="4">SMART CLASS</text>
+  <text x="74" y="142" fill="white" font-size="28" font-weight="700" font-family="Arial">Scheduler Hub</text>
+  <text x="74" y="178" fill="#FFF3EE" font-size="18" font-family="Arial">Teacher dashboard</text>
+  <rect x="52" y="260" width="212" height="18" rx="9" fill="#22314F"/>
+  <rect x="52" y="304" width="212" height="18" rx="9" fill="#22314F"/>
+  <rect x="52" y="348" width="212" height="18" rx="9" fill="#22314F"/>
+  <rect x="52" y="392" width="212" height="18" rx="9" fill="#22314F"/>
+  <rect x="52" y="436" width="212" height="18" rx="9" fill="#22314F"/>
+  <rect x="320" y="28" width="932" height="194" rx="28" fill="#172036"/>
+  <text x="356" y="92" fill="#FFFFFF" font-size="44" font-weight="700" font-family="Arial">Welcome back, teacher.</text>
+  <text x="356" y="136" fill="#AAB7D4" font-size="22" font-family="Arial">Manage timetable, announcements, and study materials from one place.</text>
+  <rect x="906" y="72" width="110" height="110" rx="24" fill="#243451"/>
+  <rect x="1032" y="72" width="110" height="110" rx="24" fill="#243451"/>
+  <rect x="1158" y="72" width="58" height="110" rx="24" fill="#243451"/>
+  <rect x="320" y="250" width="548" height="206" rx="28" fill="#172036"/>
+  <text x="356" y="306" fill="#FFFFFF" font-size="30" font-weight="700" font-family="Arial">Upcoming schedule</text>
+  <rect x="356" y="334" width="476" height="1" fill="#25324E"/>
+  <rect x="356" y="358" width="476" height="30" rx="15" fill="#EEF2FF"/>
+  <rect x="356" y="402" width="476" height="30" rx="15" fill="#EEF2FF"/>
+  <rect x="896" y="250" width="356" height="206" rx="28" fill="#172036"/>
+  <text x="930" y="306" fill="#FFFFFF" font-size="30" font-weight="700" font-family="Arial">Latest announcements</text>
+  <rect x="930" y="348" width="288" height="20" rx="10" fill="#EFF6FF"/>
+  <rect x="930" y="382" width="250" height="14" rx="7" fill="#283755"/>
+  <rect x="930" y="422" width="288" height="20" rx="10" fill="#EFF6FF"/>
+  <rect x="320" y="484" width="932" height="208" rx="28" fill="#172036"/>
+  <text x="356" y="540" fill="#FFFFFF" font-size="30" font-weight="700" font-family="Arial">Quick materials and study support</text>
+  <rect x="356" y="574" width="260" height="80" rx="22" fill="#EEF2FF"/>
+  <rect x="646" y="574" width="260" height="80" rx="22" fill="#EEF2FF"/>
+  <rect x="936" y="574" width="260" height="80" rx="22" fill="#EEF2FF"/>
+  <defs>
+    <linearGradient id="heroA" x1="52" y1="52" x2="264" y2="214" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F78C57"/>
+      <stop offset="1" stop-color="#D65A2B"/>
+    </linearGradient>
+  </defs>
+</svg>
