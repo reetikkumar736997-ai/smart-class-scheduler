@@ -1,0 +1,131 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+enum Role {
+  TEACHER
+  STUDENT
+}
+
+enum UserStatus {
+  ACTIVE
+  INACTIVE
+}
+
+enum DayOfWeek {
+  MONDAY
+  TUESDAY
+  WEDNESDAY
+  THURSDAY
+  FRIDAY
+  SATURDAY
+}
+
+model User {
+  id             String          @id @default(cuid())
+  name           String
+  email          String          @unique
+  passwordHash   String
+  role           Role
+  status         UserStatus      @default(ACTIVE)
+  createdAt      DateTime        @default(now())
+  updatedAt      DateTime        @updatedAt
+  teacherProfile TeacherProfile?
+  studentProfile StudentProfile?
+  announcements  Announcement[]
+  materials      StudyMaterial[]
+}
+
+model TeacherProfile {
+  id           String                @id @default(cuid())
+  userId       String                @unique
+  department   String
+  user         User                  @relation(fields: [userId], references: [id], onDelete: Cascade)
+  availability TeacherAvailability[]
+  timetable    TimetableEntry[]
+  subjects     Subject[]
+}
+
+model StudentProfile {
+  id             String       @id @default(cuid())
+  userId         String       @unique
+  classSectionId String
+  rollNumber     String
+  user           User         @relation(fields: [userId], references: [id], onDelete: Cascade)
+  classSection   ClassSection @relation(fields: [classSectionId], references: [id], onDelete: Cascade)
+}
+
+model ClassSection {
+  id        String           @id @default(cuid())
+  className String
+  section   String
+  roomLabel String
+  students  StudentProfile[]
+  timetable TimetableEntry[]
+
+  @@unique([className, section])
+}
+
+model Subject {
+  id            String          @id @default(cuid())
+  name          String
+  code          String          @unique
+  weeklyPeriods Int             @default(1)
+  teacherId     String
+  materials     StudyMaterial[]
+  timetable     TimetableEntry[]
+  teacher       TeacherProfile  @relation(fields: [teacherId], references: [userId], onDelete: Cascade)
+}
+
+model TeacherAvailability {
+  id        String         @id @default(cuid())
+  teacherId String
+  day       DayOfWeek
+  slotOrder Int
+  available Boolean        @default(true)
+  teacher   TeacherProfile @relation(fields: [teacherId], references: [id], onDelete: Cascade)
+
+  @@unique([teacherId, day, slotOrder])
+}
+
+model TimetableEntry {
+  id             String         @id @default(cuid())
+  classSectionId String
+  subjectId      String
+  teacherId      String
+  teacherName    String?
+  day            DayOfWeek
+  slotOrder      Int
+  room           String?
+  classSection   ClassSection   @relation(fields: [classSectionId], references: [id], onDelete: Cascade)
+  subject        Subject        @relation(fields: [subjectId], references: [id], onDelete: Cascade)
+  teacher        TeacherProfile @relation(fields: [teacherId], references: [userId], onDelete: Cascade)
+
+  @@unique([classSectionId, day, slotOrder])
+}
+
+model Announcement {
+  id        String   @id @default(cuid())
+  title     String
+  body      String   @db.Text
+  authorId  String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  author    User     @relation(fields: [authorId], references: [id], onDelete: Cascade)
+}
+
+model StudyMaterial {
+  id         String   @id @default(cuid())
+  title      String
+  subjectId  String
+  fileUrl    String
+  uploadedBy String
+  createdAt  DateTime @default(now())
+  updatedAt  DateTime @updatedAt
+  subject    Subject  @relation(fields: [subjectId], references: [id], onDelete: Cascade)
+  uploader   User     @relation(fields: [uploadedBy], references: [id], onDelete: Cascade)
+}
